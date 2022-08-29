@@ -1,0 +1,15 @@
+name: javascript actons
+
+on: [push]
+
+
+jobs:
+  run-github-actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Simple JS Action
+        uses: https://github.com/actions/hello-world-javascript-action
+        with:
+          who-to-greet: John
+
+
