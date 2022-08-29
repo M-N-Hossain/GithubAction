@@ -11,6 +11,21 @@ name:my first workflow
         - name: echo a string
           run: echo "Hello World"
         - name: multiline script
-          run:
+          run: |
             node -v
             npm -v
+
+        - name: Python Command
+          run: |
+            import platform
+            print(platform.processor())
+          shell: python
+
+    run-windows-commands:
+      runs-on: windows-latest
+      steps:
+        - name: Directory poweershell
+          run: Get-Loction
+        - name: Directory Bash
+          run: pwd
+          shell: bash
