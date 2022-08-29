@@ -1,10 +1,7 @@
-name:my first workflow
+name: my first workflow
 
-
-
-
-  on: [push]
-  jobs:
+on: [push]
+jobs:
     run-shell-command:
       runs-on: ubuntu-latest
       steps:
